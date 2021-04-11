@@ -1,0 +1,18 @@
+
+
+// we can't subtract addresss of different data types, i foud this strange because they both have address
+that is just a value so why subtraction isn't possible */
+#include <bits/stdc++.h>
+using namespace std;
+  
+int main()
+{
+  
+    float n=2;
+    int n2=3;
+    cout<<&n<<" "<<&n2<<endl; //both prints value
+    cout<<&n-&n2<<endl; //not possible as different datatype ,one is float* other one is int*
+    
+    
+    return 0;
+}
